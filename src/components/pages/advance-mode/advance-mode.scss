@@ -1,0 +1,498 @@
+@import "../../../scss/mixin.scss";
+
+.advHeadOuter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advmodeHd{
+    padding-bottom: 20px;
+    @include respond-to(media-sm) {
+        padding-bottom: 10px;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 600;
+        @include respond-to(media-sm) {
+            font-size: 30px;
+        }
+    }
+    h4{
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    span{
+        font-size: 18px;
+        color: #ffcc3c;
+        @include respond-to(media-sm) {
+            font-size: 16px;
+        }
+    }
+}
+.advtxtFrm{
+    padding-bottom: 20px;
+    .MuiFormControl-root{
+        width: 100%;
+        label{
+            color: #fff;
+            display: none;
+        }
+        .MuiInputBase-root{
+            padding-left: 0;
+            &:after{
+                border-bottom: 0 !important;
+            }
+            textarea{
+                width: 100%;
+                border: #fff solid 1px;
+                color: #fff;
+                padding: 20px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+.addtextBtn{
+    padding-bottom: 20px;
+    // button{
+    //     width: 150px;
+    //     height: 51px;
+    //     color: #ffcc3c;
+    //     border: #ffcc3c solid 1px;
+    //     font-size: 18px;
+    //     border-radius: 6px;
+    //     font-weight: 600;
+    //     &:hover{
+    //         background: #ffcc3c;
+    //         color: #000;
+            
+    //     }
+    // }
+}
+.selectTypeBx{
+    margin-top: 20px;
+    background: #570066;
+    padding: 20px;
+    border-radius: 6px;
+    @include respond-to(media-xs) {
+        padding: 10px;
+    }
+    .selectLabel {
+        font-size: 20px;
+        line-height: 51px;
+        @include respond-to(media-xs) {
+            font-size: 17px;
+        }
+    }
+}
+.Advselect{
+    .MuiFormControl-root {
+        width: 100% !important;
+        @include respond-to(media-sm) {
+            margin: 0;
+        }
+        label{
+            display: none;
+        }
+        input{
+            border: #fff solid 1px;
+            height: 51px;
+            color: #fff;
+        }
+        svg{
+            color: #fff;
+        }
+        .MuiOutlinedInput-notchedOutline{
+            top: 0;
+        }
+    }
+    .MuiInputBase-root{
+        .MuiSelect-select{
+            border: #fff solid 1px;
+            height: 51px;
+            padding: 0 15px;
+            color: #fff;
+            line-height: 51px;
+        }
+    }
+}
+.pusetOuter {
+    background: #570066;
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    @include respond-to(media-sm) {
+        padding: 20px 10px 0 10px;
+    }
+    > .MuiGrid-root{
+        padding-bottom: 20px;
+        border-bottom: #35003e solid 1px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .pusetBx {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pusetLeft{
+            width: 70px;
+            font-size: 20px;
+        }
+        .pusetMid{
+            width: calc(100% - 140px);
+            .MuiFormControl-root{
+                width: 97%;
+                
+            }
+            label{
+                color: #fff;
+                display: none;
+            }
+            input {
+                border-bottom: #fff solid 1px !important;
+                line-height: 33px !important;
+                height: 35px !important;
+                padding: 0;
+                color: #fff !important;
+
+            }
+            .MuiInputBase-root{
+                &:after{
+                    border-bottom: #fff solid 1px !important;
+                }
+            }
+        }
+        .pusetRight{
+            text-align: left;
+            width: 70px;
+            font-size: 20px;
+        }
+    }
+}
+.advTable{
+    padding-top: 30px;
+    .MuiPaper-root{
+        background: transparent;
+    }
+    table {
+        border: #463572 solid 1px;
+        th {
+            background: #570066;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            border-bottom: #463572 solid 1px;
+            padding: 10px;
+        }
+        td {
+            font-size: 16px;
+            color: #fff;
+            border-bottom: #463572 solid 1px;
+            padding: 10px;
+            line-height: 25px;
+            .editbutton{
+                background: #463572;
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                padding: 0;
+                min-width: 0;
+                color: #fff;
+                font-size: 20px;
+                line-height: 0;
+                &:hover{
+                    color: #ffcc3c;
+                }
+            }
+        }
+    }
+}
+
+.editmodalBx_Outer{
+    .MuiBox-root{
+        background: #040211 !important;
+        box-shadow: #833b91 0 0 28px 2px !important;
+        @include respond-to(media-md) {
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 15px;
+        }
+    }
+    .modalTable{
+        .MuiPaper-root{
+            background: transparent;
+        }
+        table {
+            border: #463572 solid 1px;
+            th {
+                background: #570066;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                border-bottom: #463572 solid 1px;
+                padding: 10px;
+            }
+            td {
+                font-size: 16px;
+                color: #fff;
+                border-bottom: #463572 solid 1px;
+                padding: 10px;
+                line-height: 43px;
+                input{
+                    width: 80px;
+                    height: 41px;
+                    padding: 0;
+                    border: #fff solid 1px;
+                    border-radius: 6px;
+                    margin-right: 10px;
+                    color: #fff;
+                    padding: 0 10px;
+                }
+                .addbutton{
+                    background: #463572;
+                    width: 80px;
+                    height: 40px;
+                    display: inline-block;
+                    padding: 0;
+                    min-width: 0;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 0;
+                    &:hover{
+                        color: #ffcc3c;
+                    }
+                }
+            }
+        }
+    }
+}
+.submitAll {
+    padding: 30px 0 0 0;
+    text-align: center;
+    button{
+        border: #ffcc3c solid 1px;
+        width: 180px; 
+        height: 51px;
+        font-size: 18px;
+        color: #ffcc3c;
+        font-weight: 600;
+        &:hover{
+            background: #ffcc3c;
+            color: #000;
+        }
+    }
+}
+.advtableOuter {
+    border: 1px solid #c490f3;
+    border-radius: 6px;
+    .tablesrch{
+        padding: 10px;
+        > .MuiFormControl-root {
+            width: 140px;
+            label{
+                font-size: 14px;
+                color: #fff;
+            }
+            .MuiInputBase-root{
+                height: 40px;
+                border: #c490f3 solid 1px !important;
+                background: #261631;
+                > div{
+                    padding: 0;
+                }
+                svg{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
+table.tablesrch{
+        border-top: 0 !important;
+        tr{
+            th{
+                background: #2f1844;
+                border: 0;
+                color: #ffcc3c;
+            }
+            td{
+                border-bottom: 1px solid #b09bd3;
+                padding: 8px 10px !important;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            &:nth-child(even){
+                td{
+                    background: #261631;
+                }
+            }
+        }
+}
+.tableactBx{
+    > div{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    span{
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 5px;
+        svg{
+            font-size: 30px;
+        }
+    }
+}
+.pusetBx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.editaccModal {
+    background: transparent !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 30px !important;
+}
+.advanceTableBx{
+    border: #c490f3 solid 1px;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding-bottom: 30px;
+    .advtableOuter{
+        border: 0;
+    }
+    .pusetSrch_Outer{
+        border: #c490f3 solid 1px;
+        padding: 10px 50px;
+        border-radius: 6px;
+        @include respond-to(media-sm) {
+            border: 0;
+            padding: 0;
+        }
+        .pusetBx{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #bdb0c1;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            .pusetLeft {
+                width: 6%;
+            }
+            .pusetMid {
+                width: 28%;
+                 > div{
+                     width: 100%;
+                 }
+                label{
+                    color: #564a60;
+                    text-transform: capitalize;
+                }
+                .css-ngt5hd-MuiInputBase-root-MuiInput-root{
+                    margin-top: 0;
+                    color: #564a60;
+                    border-radius: 0;
+                    border-bottom: #564a60 solid 1px !important;
+                    padding: 0;
+                    &:before{
+                        border-bottom:0 !important;
+                    }
+                    input{
+                        height: 30px;
+                        color: #fff !important;
+                        width: 100%;
+                        border-bottom: #564a60 solid 1px !important;
+                    }
+                }
+            }
+            .pusetRight {
+                width: 12%;
+                text-align: center;
+            }
+        }
+    }
+}
+.bulkactMain{
+    padding: 80px 30px 10px 30px;
+    .mulkactHd{
+        font-size: 24px;
+        padding-bottom: 15px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+.payBtn{
+    background: #686360 !important;
+    padding: 3px 10px !important;
+}
+.bulkactNew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #bdb0c1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @include respond-to(media-sm) {
+        display: block;
+        margin-bottom: 20px;
+        border: #c490f3 solid 1px;
+        padding: 20px;
+        border-radius: 6px;
+    }
+    .incrStake_Left {
+        width: 300px;
+        @include respond-to(media-sm) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .incrStake_Right {
+        width: 120px;
+        text-align: center;
+        @include respond-to(media-sm) {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
+    .incrStake_Mid {
+        width: calc(100% - 400px);
+        @include respond-to(media-sm) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .MuiTextField-root {
+            margin-top: 0;
+            color: #564a60;
+            border-radius: 0;
+            border-bottom: #564a60 solid 1px !important;
+            padding: 0;
+            width: 100%;
+            @include respond-to(media-sm) {
+                border: #564a60 solid 1px !important;
+            }
+        }
+    }
+}
+table.tablesrch tr td.waxFldBx{
+    .MuiFormControl-root{
+        .MuiInputBase-root {
+            height: 20px !important;
+            border: 0 !important;
+            background: transparent !important;
+            border-bottom: #b09bd3 solid 1px !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+input#standard-basic\ stake {
+    width: 70px;
+}
+
+input#standard-basic\ renewal {
+    width: 200px;
+}
+            

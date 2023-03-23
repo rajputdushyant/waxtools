@@ -1,0 +1,40 @@
+@import "../../../scss/mixin.scss";
+
+footer{
+    background: #570066;
+    padding: 10px 0;
+    margin-bottom: 0;
+    .LogoBx {
+        @include respond-to(media-xs) {
+            text-align: center;
+        }
+        margin: auto;
+        img {
+
+            height: 4vh;
+            margin-top: 0px;
+        }
+    }
+    .footrNav{
+        text-align: right;
+        @include respond-to(media-xs) {
+            text-align: center;
+            position: relative;
+            top:-5px;
+        }
+        a{
+            display: inline-block;
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            @include respond-to(media-xs) {
+                margin: 0 10px;
+            }
+            &:hover{
+                color: #ffd400;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,37 @@
+/*Media Query Mixing*/
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "media-xs" {
+      @media (max-width: 479px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "media-sm" {
+        @media (max-width: 767px) {
+          @content;
+        }
+      }
+    
+    @else if $breakpoint == "media-md" {
+      @media (max-width: 991px) {
+        @content;
+      }
+    }
+  
+    @else if $breakpoint == "media-lg" {
+      @media (max-width: 1279px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == "media-xl" {
+        @media (max-width:1439px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "media-xxl" {
+      @media (max-width:1600px) {
+          @content;
+      }
+  }
+  }
+
+  

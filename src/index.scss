@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$base-color: #ffffff;
+$border-dark: #463572;
+$contrast-color: #c490f3;
+
+$background-color: #13031c;
+
+$border-radius: 5px;
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  background-color: $background-color;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.index, .root {
+  min-height: 100vh;
+}
+
+//a{
+//  color: #fff;
+//  text-decoration: none;
+//}
+//.css-eglki6-MuiLinearProgress-root {
+//  height: 4px;
+//  background-color: rgb(255 188 86);
+//  margin-bottom: 20px;
+//  .css-5xe99f-MuiLinearProgress-bar1 {
+//    background-color: #ff5400;
+//  }
+//}
+//.MuiList-root.MuiList-padding.MuiMenu-list{
+//  padding: 0 !important;
+//  min-width: 170px;
+//  li{
+//    background: #9f39b1;
+//    padding: 10px;
+//    font-weight: 600 !important;
+//    font-size: 18px;
+//    color: #fff;
+//  }
+//}
+//.MuiBackdrop-root{
+//  background: rgba(0, 0, 0, 0.85) !important;
+//}
+
+.gridBx{
+  border-radius: 6px;
+}
+.ramBx{
+  padding: 25px 15px 50px 15px !important;
+}
+button{
+  background: #cc8e13 !important;
+  color: #ffffff !important;
+}
+.progressBx{
+  padding-top: 20px;
+  span{
+      height: 15px !important;
+  }
+}
+.MuiTypography-h4{
+  font-size: 30px !important;
+  font-weight: 800 !important;
+}
+.MuiInputBase-root{
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-radius: 4px;
+   > div{
+     margin-top: 0 !important;
+     height: auto !important;
+   }
+}
+.advtxtFrm{
+  .MuiInputBase-root{
+    padding: 0 !important;
+    textarea{
+      border: 0 !important;
+    }
+  }
+}

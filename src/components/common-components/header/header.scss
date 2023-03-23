@@ -1,0 +1,144 @@
+@import "../../../scss/mixin.scss";
+
+header {
+    padding: 10px;
+    z-index: 9;
+    height: 7vh;
+
+    @include respond-to(media-sm) {
+        height: 57px;
+    }
+    .LogoBx {
+        margin: auto;
+        img {
+            padding-top: 8px;
+            margin-top: 0px;
+        }
+    }
+    .MenuBx{
+        text-align: right;
+        .navbar-toggler{
+            border: #ccc solid 1px;
+            box-shadow: none !important;
+            @include respond-to(media-sm) {
+                position: fixed;
+                right: 10px;
+                top:10px;
+                width: 50px;
+                padding: 0;
+                height: 39px;
+            }
+            .navbar-toggler-icon{
+                background-image: url(../../../assets/images/more.png);
+                background-size: 25px;
+            }
+        }
+        .collapse.navbar-collapse {
+            @include respond-to(media-sm) {
+                position: fixed;
+                right: 10px;
+                top: 70px;
+            }
+        }
+        .collapse.show.navbar-collapse {
+            background: #570066;
+            padding: 0px;
+            width: 200px;
+            border-radius: 6px;
+            &::after{
+                border-left: transparent solid 15px;
+                border-right: transparent solid 15px;
+                border-bottom: #570066 solid 15px;
+                content: '';
+                position: absolute;
+                top:-15px;
+                right: 20px;
+            }
+        }
+        > div {
+            display: inline-block;
+        }
+        .navbar{
+            padding: 0;
+            .navbar-nav{
+                border: 0;
+                .nav-item{
+                    padding: 0 10px;
+                    @include respond-to(media-lg) {
+                        padding: 0 5px;
+                    }
+                    @include respond-to(media-md) {
+                        padding: 0;
+                    }
+                    @include respond-to(media-sm) {
+                        text-align: left;
+                        border-bottom: #8e0da5 solid 1px;
+                    }
+                    &:last-child{
+                        @include respond-to(media-sm) {
+                            border-bottom: 0;
+                        }
+                    }
+                    a.nav-link{
+                        color: #fff;
+                        font-size: 17px;
+                        @include respond-to(media-md) {
+                            font-size: 15px;
+                        }
+                        @include respond-to(media-sm) {
+                           font-size: 17px;
+                           padding: 10px;
+                        }
+                        &:hover{
+                            color: #f3b70f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ProfileBtn{
+        padding-top: 1px;
+        text-align: right;
+        @include respond-to(media-md) {
+            padding-top: 4px;
+        }
+        @include respond-to(media-sm) {
+            right: 65px;
+            position: relative;
+            padding-top: 2px;
+        }
+        button{
+            background: transparent !important;
+        }
+        .MuiButton-root{
+            padding: 0;
+            font-size: 18px;
+            color: #fff;
+            @include respond-to(media-md) {
+                font-size: 12px;
+            }
+            i{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #fff;
+                padding: 2px;
+                margin-right: 10px;
+                @include respond-to(media-md) {
+                   height: 32px;
+                   width: 32px;
+                }
+                img{
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    @include respond-to(media-md) {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

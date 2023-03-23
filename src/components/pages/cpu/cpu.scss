@@ -1,0 +1,693 @@
+@import "../../../scss/mixin.scss";
+
+.MuiContainer-root{
+    max-width: 1536px !important;
+}
+.cpuOuter{
+    min-height: 90vh;
+    @include respond-to(media-sm) {
+        padding: 30px 0;
+    }
+    .cpuLeftBx{
+        .buleBarLogo{
+            padding-bottom: 30px;
+            @include respond-to(media-xs) {
+                padding-bottom: 15px;
+            }
+            h2{
+                font-size: 30px;
+                padding-bottom: 5px;
+                @include respond-to(media-sm) {
+                    font-size: 24px;
+                    padding-bottom: 0;
+                }
+                @include respond-to(media-xs) {
+                    font-size: 22px;
+                }
+                .editModalOuter{
+                    display: inline-block;
+                    > button{
+                        font-size: 18px;
+                        padding: 0;
+                        color: #ffcc3c;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            span{
+                font-size: 16px;
+                @include respond-to(media-xs) {
+                    font-size: 14px;
+                }
+            }
+            .advmodeBtnBx{
+                text-align: right;
+                a {
+                    width: 190px;
+                    height: 46px;
+                    display: inline-block;
+                    color: #ffcc3c ;
+                    border-radius: 22px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border: #ffcc3c  solid 1px;
+                    background: transparent;
+                    line-height: 44px;
+                    text-align: center;
+                    text-decoration: none;
+                    &:hover{
+                        background: #ffcc3c ;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .waxBalanceOuter{
+            padding-bottom: 30px;
+            .totalBalance_Left{
+                border: #463572 solid 1px;
+                border-radius: 6px;
+                padding: 20px 20px 20px 110px;
+                position: relative;
+                @include respond-to(media-xs) {
+                    padding: 10px 10px 10px 80px;
+                }
+                i{
+                    width: 70px;
+                    height: 70px;
+                    position: absolute;
+                    left: 20px;
+                    top:20px;
+                    background: #f5f5f5;
+                    border-radius: 6px;
+                    @include respond-to(media-xs) {
+                        width: 60px;
+                        height: 60px;
+                        left: 10px;
+                        top: 15px;
+                    }
+                    img{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        max-width: 70%;
+                    }
+                }
+                span{
+                    display: block;
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                    color: #ccc;
+                    padding-top: 2px;
+                    @include respond-to(media-sm) {
+                        font-size: 16px;
+                    }
+                }
+                h2{
+                    font-size: 26px;
+                    color: #fff;
+                    @include respond-to(media-md) {
+                        font-size: 22px;
+                    }
+                    @include respond-to(media-sm) {
+                        font-size: 22px;
+                    }
+                    @include respond-to(media-xs) {
+                        font-size: 20px;
+                    }
+                    small{
+                        font-size: 18px;
+                        @include respond-to(media-xs) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .totalBalance_Right{
+                border: #463572 solid 1px;
+                border-radius: 6px;
+                padding: 15px 20px;
+                @include respond-to(media-xs) {
+                    padding: 10px;
+                }
+                span{
+                    font-weight: 600;
+                    display: block;
+                    color: #fff;
+                    font-size: 22px;
+                    line-height: 26px;
+                    padding-bottom: 10px;
+                    @include respond-to(media-sm) {
+                        font-size: 20px;
+                    }
+                    @include respond-to(media-xs) {
+                        font-size: 18px;    
+                    }
+                }
+                .MuiFormControl-root{
+                    width: 100% !important;
+                    margin: 0 !important;
+                    label{
+                        color: #fff !important;
+                        display: none;
+                    }
+                    .MuiInputBase-root{
+                        border: #463572 solid 1px !important;
+                        color: #fff;
+                        height: 45px;
+                        svg{
+                            color: #fff;
+                        }
+                        legend{
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stockeBx {
+            background: #570066;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            @include respond-to(media-xs) {
+             padding: 10px;           
+            }
+            .stockValue{
+                label{
+                    display: block;
+                    font-weight: 600;
+                    color: #fff;
+                    padding-bottom: 10px;
+                    font-size: 22px;
+                    @include respond-to(media-lg) {
+                        font-size: 20px;
+                    }
+                    @include respond-to(media-xs) {
+                        font-size: 18px;   
+                    }
+                }  
+                .stockInpBx {
+                    padding: 5px;
+                    background: #220028;
+                    border-radius: 6px;
+                    position: relative;
+                    input{
+                        height: 41px;
+                        color: #fff;
+                        font-size: 18px;
+                        padding: 0 10px;
+                    }
+                    > span{
+                        font-size: 20px;
+                        color: #f3b70f;
+                        font-weight: 800;
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        @include respond-to(media-xs) {
+                            font-size: 18px;
+                        }
+                    }
+                } 
+            }
+            .payBtn{
+                padding-top: 43px;
+                @include respond-to(media-xl) {
+                    padding-top: 40px;
+                }
+                @include respond-to(media-md) {
+                    padding-top: 40px;
+                }
+                @include respond-to(media-sm) {
+                    padding-top: 10px;
+                }
+                button{
+                    width: 100%;
+                    height: 51px;
+                    margin: 0;
+                    padding: 0;
+                    background: transparent;
+                    color: #ffcc3c;
+                    font-size: 18px;
+                    font-weight: 600;
+                    border: #ffcc3c solid 2px;
+                    &:hover{
+                        background: #ffcc3c;
+                        color: #000;
+                    }
+                }
+            } 
+        }
+        .ramOuterBx{
+            border: #463572 solid 1px;
+            padding: 20px;
+            border-radius: 6px;
+            @include respond-to(media-lg) {
+                padding: 10px;
+            }
+            .ValueGraph {
+                position: relative;
+                margin-top: -17px;
+                text{
+                    fill: #fff;
+                }
+            }
+            .ramValue{
+                border: #463572 solid 1px;
+                border-radius: 6px;
+                padding: 20px;
+                background: #0b0726c9;
+                min-height: 210px;
+                @include respond-to(media-lg) {
+                    padding: 15px;
+                }
+                @include respond-to(media-sm) {
+                    min-height: 0;
+                }
+                .progressBx{
+                    .MuiBox-root{
+                        align-items: flex-start;
+                        p{
+                            color: #fff;
+                        }                       
+                    }
+                }
+                h2{
+                    font-size: 28px;
+                    font-weight: 800;
+                    padding-bottom: 5px;
+                    @include respond-to(media-lg) {
+                        font-size: 24px;
+                    }
+                }
+                span{
+                    display: block;
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                    @include respond-to(media-lg) {
+                        font-size: 15px;
+                    }
+                }
+                button{
+                    font-size: 16px;
+                    width: 130px;
+                    height: 46px;
+                    color: #fff;
+                    border: #fff solid 1px;
+                    border-radius: 6px;
+                    &:hover{
+                        border: #ffcc3c solid 1px;
+                        color: #ffcc3c;
+                    }
+                }
+            }
+        }
+    }
+    .cpuRightBx{
+        .logedInnBx {
+            border: #463572 solid 1px;
+            padding: 43px;
+            border-radius: 6px;
+            margin-bottom: 35px;
+            @include respond-to(media-lg) {
+                padding: 15px;
+            }
+            span{
+                font-size: 18px;
+                display: block;
+                padding-bottom: 10px;
+                @include respond-to(media-xl) {
+                    font-size: 16px;
+                }
+            }
+            h2{
+                font-size: 30px;
+                padding-bottom: 20px;
+                @include respond-to(media-xl) {
+                    font-size: 25px;
+                }
+            }
+            button{
+                width: 150px;
+                height: 51px;
+                background: transparent;
+                border-radius: 6px;
+                border: #ffcc3c solid 2px;
+                color: #ffcc3c;
+                font-size: 18px;
+                font-weight: 600;   
+                @include respond-to(media-xs) {
+                    height: 46px;
+                    width: 130px;
+                    font-size: 16px;       
+                } 
+                &:hover{
+                    background: #ffcc3c;
+                    color:#000;
+                }
+            }
+        }
+        .stakedwaxedBx {
+            border: #463572 solid 1px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            .stakeTop{
+                border-bottom: #463572 solid 1px;
+                padding: 30px;
+                @include respond-to(media-lg) {
+                    padding: 30px;
+                }
+                span{
+                    font-size: 18px;
+                    display: block;
+                    padding-bottom: 15px;
+                    text-transform: uppercase;
+                    @include respond-to(media-xl) {
+                        font-size: 16px;
+                    }
+                }
+                h2{
+                    font-size: 30px;
+                    @include respond-to(media-xl) {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .stakeBot{
+                padding: 30px;
+                p{
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+                a{
+                    font-size: 18px;
+                    color: #017fd3;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: #fff;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .downloadBx{
+            border: #463572 solid 1px;
+            border-radius: 6px;
+            margin-bottom: 20px;   
+            padding: 20px;
+            @include respond-to(media-lg) {
+                padding: 10px;
+            }
+            strong{
+                font-size: 18px;
+                display: block;
+                padding-bottom: 20px;
+                text-transform: uppercase;
+                @include respond-to(media-xs) {
+                 font-size: 16px;  
+                 padding-bottom: 10px;     
+                }
+            } 
+            p{
+                font-size: 16px;
+                margin-bottom: 25px;
+                @include respond-to(media-xs) {
+                    font-size: 15px;       
+                }
+            }
+            a{
+                font-size: 18px;
+                color: #017fd3;
+                font-weight: 600;
+                text-transform: uppercase;
+                @include respond-to(media-xs) {
+                    font-size: 15px;       
+                }
+                &:hover{
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.currentStock_Outer {
+    padding-bottom: 20px;
+    .currentStockBx {
+        border-radius: 6px;
+        background: #570066;
+        .currentBal{
+            padding: 20px;
+            position: relative;
+            @include respond-to(media-sm) {
+                padding: 15px 10px;
+            }
+            strong{
+                display: block;
+                font-size: 18px;
+                padding-bottom: 5px;
+                @include respond-to(media-xs) {
+                    font-size: 16px;
+                }
+            }
+            h2{
+                font-size: 40px;
+                @include respond-to(media-lg) {
+                    font-size: 32px;
+                }
+                @include respond-to(media-xs) {
+                    font-size: 26px;
+                }
+                span{
+                    display: block;
+                    font-size: 36px;
+                    @include respond-to(media-lg) {
+                        font-size: 26px;
+                        padding-top: 5px;
+                    }
+                    @include respond-to(media-xs) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .discBtn{
+                width: auto;
+                position: absolute;
+                right: 20px;
+                bottom: -15px;
+                background: #ffcc3c;
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 25px;
+                padding: 0 20px;
+                color: #000;
+                font-weight: 600;
+            }
+        }
+        .paydisc{
+            border: #463572 solid 1px;
+            border-radius: 6px;
+            background: rgba(11, 7, 38, 0.7882352941);
+            padding:30px 20px;
+            display: flex;
+            justify-content: space-between;
+            @include respond-to(media-sm) {
+                padding: 15px 10px;
+            }
+            @include respond-to(media-xs) {
+                display: block;
+            }
+            .incTime{
+                width: 55%;
+                padding-right: 2%;
+                @include respond-to(media-xs) {
+                  width: 100%;
+                  margin-right: 0;
+                  margin-bottom: 20px;
+                }
+                .MuiFormLabel-root{
+                    color: #fff;
+                    font-size: 16px;
+                }
+                .MuiInputBase-root{
+                    > div{
+                        padding: 0px;
+                        border: 0 !important; 
+                        height: 49px;
+                    }
+                    svg{
+                        color: #fff;
+                    }
+                    input{
+                        color: #fff;
+                        height: 49px;
+                    }
+                    fieldset{
+                        color: #fff;
+                        border: 0;
+                        legend{
+                            color: #fff;
+                            span{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .payBtn{
+                width: 42%;
+                @include respond-to(media-sm) {
+                    width: 35%;
+                }
+                @include respond-to(media-xs) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                  }
+                button{
+                    border: #ffcc3c solid 2px;
+                    color: #ffcc3c;
+                    height: 51px;
+                    width: 100%;
+                    font-weight: 600;
+                    font-size: 18px;
+                    &:hover{
+                        background: #ffcc3c;
+                        color: #000;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.MuiOutlinedInput-notchedOutline{
+    border: 0 !important;
+}
+.selectBx{
+    .MuiFormControl-root{
+        width: 100% !important;
+        margin: 0 !important;
+        label{
+            color: #fff !important;
+            display: none;
+        }
+        .MuiInputBase-root{
+            border: #463572  solid 1px !important;
+            color: #fff;
+            height: 49px;
+            line-height: 49px;
+            padding: 0 5px;
+            > div{
+                border: 0 !important;
+            }
+            svg{
+                color: #fff;
+            }
+            
+            legend{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.currentValuex{
+    width: 55%;
+    @include respond-to(media-xs) {
+       width: 100%;
+       padding-bottom: 15px;
+    }
+    .MuiFormControl-root{
+        width: 100%;
+        label{
+            color: #fff;
+        }
+        .MuiInputBase-root{
+            border: #463572 solid 1px;
+            input{
+                height: 49px;
+                padding: 0 10px;
+            }
+            fieldset{
+                display: none;
+            }
+        }
+    }
+}
+.editmodalBx{
+    color: #fff;
+    width: 100% !important;
+    max-width: 400px;
+    background: #040211 !important;
+    box-shadow: #833b91 0 0 28px 2px !important;
+    border-radius: 6px;
+    @include respond-to(media-xs) {
+        max-width: 95%;
+        padding: 20px !important;
+    }
+    .modalInpBx{
+        padding-bottom: 20px;
+        .MuiFormControl-root{
+            width: 100%;
+        }
+    }
+    .saveBtnOuter{
+        button{
+            border: #ffcc3c  solid 2px;
+                    color: #ffcc3c ;
+                    height: 51px;
+                    width: 100%;
+                    font-weight: 600;
+                    
+                    font-size: 18px;
+                    &:hover{
+                        background: #ffcc3c;
+                        color: #000;
+                        border: #ffcc3c solid 1px;
+                    }
+        }
+    }
+}
+.modalInpBx {
+    .MuiInputBase-input {
+        border: #463572 solid 1px;
+        color: #fff;
+    }
+    .MuiFormLabel-root{
+        display: none;
+    }
+}
+.largeBtn{
+    height: 50px;
+}
+.medium{
+    height: 40px;
+}
+.textInp{
+    input{
+        height: 48px !important;
+        padding: 0 15px !important;
+        border-radius: 6px !important;
+        max-width: 160px !important;
+    }
+    p.MuiTypography-root{
+        color: #f3b70f !important;
+    }
+}
+.editBtn {
+    background: transparent !important;
+    color: #cc8e13 !important;
+    padding: 0 !important;
+    vertical-align: bottom !important;
+    padding-top: 10px !important;
+}
